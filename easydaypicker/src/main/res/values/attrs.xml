@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DayPicker">
+        <attr name="DayBtnMargin" format="dimension"/>
+        <attr name="DayBtnMarginLeft" format="dimension"/>
+        <attr name="DayBtnMarginTop" format="dimension"/>
+        <attr name="DayBtnMarginBottom" format="dimension"/>
+        <attr name="DayBtnMarginRight" format="dimension"/>
+
+        <attr name="DayBtnBackground" format="integer" localization="suggested"/>
+        <attr name="DayBtnTextAppearance" format="reference" localization="suggested" />
+
+        <attr name="DayBtnSelectedTextColor" format="color"/>
+        <attr name="DayBtnUnSelectedTextColor" format="color"/>
+
+        <attr name="DayBtnTextSize" format="dimension"/>
+
+        <attr name="SelectedDay" format="enum">
+            <enum name="none" value="-1" />
+            <enum name="sunday" value="0" />
+            <enum name="monday" value="1" />
+            <enum name="tuesday" value="2" />
+            <enum name="wednesday" value="3" />
+            <enum name="thursday" value="4" />
+            <enum name="friday" value="5" />
+            <enum name="saturday" value="6" />
+        </attr>
+    </declare-styleable>
+</resources>
