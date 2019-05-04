@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="day_btn_state_unchecked_bgcolor">#FFFFFF</color>
+    <color name="day_btn_state_checked_bgcolor">#0000FF</color>
+
+    <color name="day_btn_state_checked_ringcolor">#0000FF</color>
+    <color name="day_btn_state_checked_bgfill">#FFFFFF</color>
+
+    <color name="day_btn_state_unchecked_ringcolor">#FFFFFF</color>
+    <color name="day_btn_state_unchecked_bgfill">#0000FF</color>
+
+</resources>

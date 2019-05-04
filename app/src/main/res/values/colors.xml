@@ -3,4 +3,14 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="day_btn_state_checked_bgcolor">#D81B60</color>
+    <color name="day_btn_state_unchecked_bgcolor">#FFFFFF</color>
+
+    <color name="day_btn_state_checked_ringcolor">#D81B60</color>
+    <color name="day_btn_state_checked_bgfill">#FFFFFF</color>
+
+    <color name="day_btn_state_unchecked_ringcolor">#FFFFFF</color>
+    <color name="day_btn_state_unchecked_bgfill">#D81B60</color>
+
 </resources>

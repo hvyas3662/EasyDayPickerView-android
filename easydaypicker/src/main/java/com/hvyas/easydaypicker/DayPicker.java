@@ -36,8 +36,8 @@ public class DayPicker extends LinearLayout {
         super(context, attrs, defStyleAttr);
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.DayPicker, 0, 0);
         SelectedDay = a.getInteger(R.styleable.DayPicker_SelectedDay, -1);
-        DayBtnTextAppearance = a.getResourceId(R.styleable.DayPicker_DayBtnTextAppearance, R.style.easyDatePickerDefaultBtnStyle);
-        DayBtnBackground = a.getResourceId(R.styleable.DayPicker_DayBtnBackground, R.drawable.toggle_background);
+        DayBtnTextAppearance = a.getResourceId(R.styleable.DayPicker_DayBtnTextAppearance, R.style.easyDayPickerDefaultBtnStyle);
+        DayBtnBackground = a.getResourceId(R.styleable.DayPicker_DayBtnBackground, R.drawable.daybtnbackground_round);
         DayBtnMarginLeft = a.getDimensionPixelSize(R.styleable.DayPicker_DayBtnMarginLeft, 0);
         DayBtnMarginTop = a.getDimensionPixelSize(R.styleable.DayPicker_DayBtnMarginTop, 0);
         DayBtnMarginRight = a.getDimensionPixelSize(R.styleable.DayPicker_DayBtnMarginRight, 0);
@@ -239,7 +239,7 @@ public class DayPicker extends LinearLayout {
     }
 
 
-    // result
+    // output
     public ArrayList<Boolean> getSelectedDays() {
         result.clear();
         for (int i = 0; i < 7; i++) {
