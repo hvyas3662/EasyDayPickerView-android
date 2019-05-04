@@ -42,23 +42,63 @@ dependencies {
         app:SelectedDay="monday" />
  ```
  
- 2. Other xml attribute are
+ 2. java code
  
-  ```xml
-  ```
- 
+  ```java
+       DayPicker dp = findViewById(R.id.dp);
+       dp.setDaysName(new String[]{"Sun", "Mon", "Tue", "Wed", "The", "Fri", "Sat"});
+       dp.setDayBtnTextSize(10);
+       dp.setDayBtnMarginPx(5, 5, 5, 5);
+       dp.setDayBtnStateTextColors(Color.parseColor("#000000"), Color.parseColor("#ffffff"));
+       dp.setSelectedDayIndex(1);
+       dp.setDayBtnTextAppearance(this, R.style.easyDayPickerDefaultBtnStyle);
+       dp.setDayBtnBackground(R.drawable.daybtnbackground_ring);
+       dp.setMultipleSelected(true, false, false, true, false, false, true);
 
+       dp.setOnDaySelectionChangeListener(new OnDaySelectionChangeListener() {
+           @Override
+           public void OnDaySelectionChange(ArrayList<Boolean> getSelectedDays, ArrayList<String> getSelectedDaysName, ArrayList<String> getSelectedDaysShortName) {
+               Log.d("SelectedDays Array list", getSelectedDays.toString());
+               Log.d("SelectedDays Name", getSelectedDaysName.toString());
+               Log.d("SelectedDays Short Name", getSelectedDaysShortName.toString());
+           }
+       });
+
+      Log.d("SelectedDays Array list", dp.getSelectedDays().toString());
+      Log.d("Selected Days Name", dp.getSelectedDaysName().toString());
+      Log.d("SelectedDays Short Name", dp.getSelectedDaysShortName().toString());
+      Log.d("Nth child of view", dp.getNthChild(1).toString());
+
+  ```
+  
 ## Customization
 
-   * image compression format (e.g. PNG, JPEG, WEBP), compression
-   * image compression quality [0 - 100]. PNG which is lossless, will ignore the quality setting.
-   * whether all gestures are enabled simultaneously
-   * maximum size for Bitmap that is decoded from source Uri and used within crop view. If you want to override default behaviour.
-   * toggle whether to show crop frame/guidelines
-   * setup color/width/count of crop frame/rows/columns
-   * choose whether you want rectangle or oval crop area
-   * the UI colors (Toolbar, StatusBar, active widget state)
-   * and more...
+   1. xml attribute
+   
+   | Attribute | Description |
+   | --- | --- |
+   | `DayBtnMargin` | Set margin to day button |
+   | `DayBtnMarginLeft` | Set left margin to day button |
+   | `DayBtnMarginTop` | Set top margin to day button |
+   | `DayBtnMarginBottom` | Set bottom margin to day button |
+   | `DayBtnMarginRight` | Set right margin to day button |
+   | `DayBtnBackground` | Set background to each day button, EasyDayPicker provide 4 type of background (daybtnbackground_ring, daybtnbackground_round, daybtnbackground_round_corner_square, daybtnbackground_square) |
+   | `DayBtnTextAppearance` | Set textAppearance to each day button, EasyDayPicker provide 2 type of textAppearance(easyDayPickerDefaultBtnStyle, easyDayPickerDefaultBtnStyle_italic) |
+   | `DayBtnSelectedTextColor` | Set selected state color of day button |
+   | `DayBtnUnSelectedTextColor` | Set unselected state color of day button |
+   | `DayBtnTextSize` | Set day button text size |
+   | `SelectedDay` | Set selected given day value (none, sunday, monday, tuesday, wednesday, thursday, friday, saturday) |
+   
+   2. colors (ovrride these color in your colors.xml fle to change given background's color scheme)
+   
+   | Colors | Description |
+   | --- | --- |
+   | `day_btn_state_checked_bgcolor` | Day button selected state color |
+   | `day_btn_state_unchecked_bgcolor` | Day button unselected state color |
+   | `day_btn_state_checked_ringcolor` | Day button selected state border color |
+   | `day_btn_state_checked_bgfill` | Day button selected state Fill color |
+   | `day_btn_state_unchecked_ringcolor` | Day button unselected state border color |
+   | `day_btn_state_unchecked_bgfill` | Day button unselected state Fill color | 
 
 ## Compatibility
   
