@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d("SelectedDays Array list", dp.getSelectedDays().toString());
         Log.d("Selected Days Name", dp.getSelectedDaysName().toString());
         Log.d("SelectedDays Short Name", dp.getSelectedDaysShortName().toString());
+        Log.d("Nth child of view", dp.getNthChild(1).toString());
 
     }
 }
