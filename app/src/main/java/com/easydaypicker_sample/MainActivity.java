@@ -1,4 +1,4 @@
-package com.easydaypicker;
+package com.easydaypicker_sample;
 
 import android.graphics.Color;
 import android.os.Bundle;
