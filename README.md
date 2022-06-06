@@ -1,24 +1,28 @@
 # EasyDayPicker-android
 
-EasyDayPicker :- A android library helps you to select one or more weekday(s). 
+EasyDayPicker :- A android library helps you to select one or more weekday(s).
 
 [![](https://jitpack.io/v/hvyas3662/EasyDayPicker-android.svg)](https://jitpack.io/#hvyas3662/EasyDayPicker-android)
 
 <img src="ss.jpg" width="300" height="533">
 
-
 ## How to configure
 
- For a working implementation, please have a look at the app directory
- 1. Add maven in your root build.gradle at the end of repositories
- 2. Add the dependency
+For a working implementation, please have a look at the app directory
+
+1. Add maven in your root build.gradle
+
 ```gradle
 allprojects {
   repositories {
     maven { url 'https://jitpack.io' }
   }
 }
+```
 
+2. Add the dependency in your app level build.gradle
+
+```gradle
 dependencies {
   implementation 'com.github.hvyas3662:EasyDayPicker-android:v2.0'
 }
