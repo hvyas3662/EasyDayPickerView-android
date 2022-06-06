@@ -2,11 +2,12 @@ package com.easydaypicker_sample;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
-import com.hvyas.easydaypicker.DayPicker;
-import com.hvyas.easydaypicker.OnDaySelectionChangeListener;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.elevationsoft.easydaypicker.DayPicker;
+import com.elevationsoft.easydaypicker.OnDaySelectionChangeListener;
 
 import java.util.ArrayList;
 

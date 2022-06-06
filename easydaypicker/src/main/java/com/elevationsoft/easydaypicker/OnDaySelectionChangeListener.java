@@ -1,4 +1,4 @@
-package com.hvyas.easydaypicker;
+package com.elevationsoft.easydaypicker;
 
 import java.util.ArrayList;
 

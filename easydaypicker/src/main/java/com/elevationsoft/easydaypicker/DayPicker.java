@@ -1,4 +1,4 @@
-package com.hvyas.easydaypicker;
+package com.elevationsoft.easydaypicker;
 
 import android.content.Context;
 import android.content.res.TypedArray;

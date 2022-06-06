@@ -20,19 +20,17 @@ allprojects {
 }
 
 dependencies {
-  implementation 'com.github.hvyas3662:EasyDayPicker-android:1.0'
+  implementation 'com.github.hvyas3662:EasyDayPicker-android:v2.0'
 }
 ```
 
 ## How do I use EasyDayPicker?
 
+1. add DayPicker view in your xml file
 
-1. add DayPicker view in yout xml file  
- 
- 
  ```xml
-    <com.hvyas.easydaypicker.DayPicker
-        android:layout_width="match_parent"
+
+<com.elevationsoft.easydaypicker.DayPicker android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_weight="1"
         app:DayBtnBackground="@drawable/daybtnbackground_round"
